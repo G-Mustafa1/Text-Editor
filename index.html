@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Text Editor</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center><h1>Text Editor By Ghulam Mustafa</h1></center>
+   <div class="mein">
+      <div class="new-div1">
+         <div class="btn-div">
+            <input  type="number" name="" id="fontsize" min="1" max="100" value="16" onchange="fontsize(this)">
+            <button onclick="btnbold()">Bold</button>
+            <button onclick="btnitalic()">Italic</button>
+            <button onclick="btnUnderline()">Underline</button>
+            <button onclick="left()">Align Left</button>
+            <button onclick="center()">Align Center</button>
+            <button onclick="right()">Align Right</button>
+            <button onclick="upercase()">aA</button>
+            <label for="Font Color">  Color </label>
+            <input type="color" name="" id="color-change" onchange="colorchange(this)">
+            <select name="font_family" id="font_family">
+               <option value="">Font Family</option>
+               <option value="Segoe UI">Segoe UI</option>
+               <option value="sans-serif">sans-serif</option>
+               <option value="Times New Roman">Times New Roman</option>
+               <option value="system-ui">system-ui</option>
+               <option value="algerian">algerian</option>
+               <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+               <option value="helvetica">helvetica</option>
+               <option value="impact">impact</option>
+               <option value="haettenschweiler">haettenschweiler</option>
+               <option value="-apple-system, BlinkMacSystemFont">apple-system, BlinkMacSystemFont</option>
+               <option value="Arial Narrow">Arial Narrow</option>
+               <option value="verdana">verdana</option>
+               <option value="Geneva">Geneva</option>
+               <option value="Lucida Sans">Lucida Sans</option>
+               <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+               <option value="Georgia">Georgia</option>
+               <option value="Cambria">Cambria</option>
+             </select>
+       
+            <button onclick="Clearall()">Clear All</button>
+         </div>
+      </div>
+      <div class="new-div2">
+         <div id="new-div" contenteditable="true"></div>
+      </div>
+   </div>
+   
+   <script src="app.js"></script>
+</body>
+</html>
